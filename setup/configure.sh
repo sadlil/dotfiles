@@ -19,8 +19,6 @@ elif [ "$os" = 'Linux' ]; then
     fi
 fi
 
-
-
 # http://howtoubuntu.org/things-to-do-after-installing-ubuntu-14-04-trusty-tahr
 sudo add-apt-repository -y ppa:videolan/stable-daily
 sudo add-apt-repository -y ppa:gnome3-team/gnome3
@@ -53,6 +51,7 @@ install software-properties-common \
     exuberant-ctags terminator byzanz lzop pv python-dev \
     python-setuptools python-pip
 
+install terminator
 
 if [[ $(google-chrome --version) = '' ]]
 then
@@ -71,6 +70,23 @@ then
         rm -f google-chrome-stable_current_i386.deb
     fi
 fi
+
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+
+install skype
+install -f
+
+sudo sh -c 'echo "deb https://atlassian.artifactoryonline.com/atlassian/hipchat-apt-client $(lsb_release -c -s) main" > /etc/apt/sources.list.d/atlassian-hipchat4.list'
+wget -O - https://atlassian.artifactoryonline.com/atlassian/api/gpg/key/public | sudo apt-key add -
+sudo apt-get update
+install hipchat4
+
+wget http://download.teamviewer.com/download/teamviewer_i386.deb
+sudo dpkg -i teamviewer_linux.deb
+install -f
+rm teamviewer_linux.deb
+
+
 
 # Clean up at last
 sudo apt-get -f install
