@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: netter
+spec:
+  containers:
+  - name: netter
+    image: sadlil/netter:1.0
