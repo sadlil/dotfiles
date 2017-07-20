@@ -1,4 +1,4 @@
-FROM node:4.4
+FROM scratch
 EXPOSE 8080
-COPY src/server.js .
-CMD node server.js
+COPY hello-world /
+CMD ["/hello-world"]

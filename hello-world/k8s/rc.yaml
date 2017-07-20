@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: hello-world
-        image: sadlil/hello-world:1.0
+        image: sadlil/hello-world:2.0
         ports:
         - containerPort: 8080
