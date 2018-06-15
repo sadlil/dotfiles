@@ -1,0 +1,7 @@
+macLocalUrl:
+  - docker.for.mac.localhost
+  - docker.for.mac.host.internal
+
+# https://github.com/SourceLabOrg/kafka-webview
+images:
+  kafkaWebView: docker run -it -p 8080:8080 -v /tmp/kafka:/app/data sourcelaborg/kafka-webview:latest
