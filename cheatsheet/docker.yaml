@@ -5,3 +5,4 @@ macLocalUrl:
 # https://github.com/SourceLabOrg/kafka-webview
 images:
   kafkaWebView: docker run -it -p 8080:8080 -v /tmp/kafka:/app/data sourcelaborg/kafka-webview:latest
+  redisCluster: docker run -d -p 30001:30001 -p 30002:30002 -p 30003:30003  tommy351/redis-cluster:3.2
