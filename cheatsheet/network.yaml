@@ -1,0 +1,1 @@
+myIP: wget -qO- ifconfig.co
