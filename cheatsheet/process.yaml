@@ -1,0 +1,1 @@
+killProcessRunningOnPort: kill $(lsof -t -i:9920)
