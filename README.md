@@ -1,5 +1,8 @@
-# dotfiles
+# dotfiles()
 Collection scripts, cheatsheets, knowledge base and dotfiles.
 
-# expirements()
-All engineering expirements I do in - [https://github.com/sadlil/expirements](https://github.com/sadlil/expirements).
+# experiments()
+All engineering experiments I do in - [https://github.com/sadlil/experiments](https://github.com/sadlil/experiments).
+
+# classified()
+All private and secret documents collection https://github.com/sadlil/classified
