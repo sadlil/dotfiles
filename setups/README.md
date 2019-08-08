@@ -1,2 +1,5 @@
 ## setup
-Configures The Local Development pc.
+Script to configure local Development pc.
+
+- [Linux](linux/)
+- [Darwin](darwin/)
