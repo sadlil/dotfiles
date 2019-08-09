@@ -1,0 +1,6 @@
+[user]
+	name = Sadlil
+	email = sadlil.rhythm@gmail.com
+[core]
+	editor = nano
+	excludesfile = $HOME/.gitignore
