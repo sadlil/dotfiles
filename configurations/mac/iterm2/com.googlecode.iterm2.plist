@@ -1539,7 +1539,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/srhythom/Computer/Personal/Code/dotfiles/configurations/mac/iterm2</string>
+	<string>~/dotfiles/configurations/mac/iterm2</string>
 	<key>PreserveWindowSizeWhenTabBarVisibilityChanges</key>
 	<true/>
 	<key>Print In Black And White</key>
