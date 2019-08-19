@@ -2,3 +2,4 @@
 .idea/
 dockerfiles.iml
 **/.DS_Store
+vms/ubuntu/.vagrant/
