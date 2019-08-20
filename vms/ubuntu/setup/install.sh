@@ -20,6 +20,8 @@ rm  go1.12.8.linux-amd64.tar.gz
 touch /home/vagrant/.bash_profile
 
 echo "export PATH=$PATH:/usr/local/go/bin" >> /home/vagrant/.bash_profile
-echo `export GOPATH=/home/vagrant/Computer/Work/go` >> /home/vagrant/.bash_profile
+echo "export GOPATH=/home/vagrant/Computer/Work/go" >> /home/vagrant/.bash_profile
 echo "export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin" >> /home/vagrant/.bash_profile
 export GOPATH=/home/vagrant/Computer/Work/go
+
+sudo apt-get -y install jq
