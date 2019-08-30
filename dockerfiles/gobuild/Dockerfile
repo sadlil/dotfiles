@@ -12,7 +12,7 @@ RUN apk add bash git make curl nano \
 # Install golang build and lint tools
 RUN go get -mod='' -u golang.org/x/tools/cmd/goimports
 RUN go get -mod='' -u github.com/onsi/ginkgo/ginkgo
-RUN go get -mod='' -u github.com/vektra/mockery
+RUN go get -mod='' -u github.com/vektra/mockery/cmd/mockery
 RUN go get -mod='' github.com/golangci/golangci-lint/cmd/golangci-lint
 RUN go get -mod='' -u golang.org/x/tools/cmd/cover
 RUN go get -mod='' -u github.com/mattn/goveralls
