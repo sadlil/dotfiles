@@ -4,6 +4,11 @@
 sudo DEBIAN_FRONTEND=noninteractive apt-get -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confnew" install git
 
 sudo apt-get -y install fish
+sudo apt-get install -y pkg-config libvpx-dev libopus-dev libopusfile-dev
+sudo apt -y update
+sudo apt -y install build-essential
+sudo apt-get -y install manpages-dev
+
 #get golang 1.9.1
 curl -O https://storage.googleapis.com/golang/go1.12.8.linux-amd64.tar.gz
 
