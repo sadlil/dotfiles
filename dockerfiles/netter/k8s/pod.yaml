@@ -6,3 +6,10 @@ spec:
   containers:
   - name: netter
     image: sadlil/netter:1.0
+    readinessProbe:
+      exec:
+        command:
+          - cat
+          - /tmp/healthy
+      initialDelaySeconds: 5
+      periodSeconds: 5
