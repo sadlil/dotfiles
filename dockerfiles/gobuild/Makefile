@@ -1,6 +1,6 @@
 USER = sadlil
 PROJECT = gobuild
-VERSION = 1.12.9
+VERSION = 1.15.2
 
 ROOT_DIR:=$(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 

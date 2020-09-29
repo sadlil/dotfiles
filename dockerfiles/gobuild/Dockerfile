@@ -1,4 +1,4 @@
-FROM golang:1.12.9-alpine3.10
+FROM golang:1.15.2-alpine3.12
 
 LABEL maintainer="Sadlil Rhythom <me@sadlil.com>"
 
@@ -10,13 +10,12 @@ RUN apk add bash git make curl nano \
     libc-dev gcc
 
 # Install golang build and lint tools
-RUN go get -mod='' -u golang.org/x/tools/cmd/goimports
-RUN go get -mod='' -u github.com/onsi/ginkgo/ginkgo
-RUN go get -mod='' -u github.com/vektra/mockery/cmd/mockery
-RUN go get -mod='' github.com/golangci/golangci-lint/cmd/golangci-lint
-RUN go get -mod='' -u golang.org/x/tools/cmd/cover
-RUN go get -mod='' -u github.com/mattn/goveralls
-RUN go get -mod='' -u honnef.co/go/tools/cmd/staticcheck
+RUN go get -u golang.org/x/tools/cmd/goimports
+RUN go get -u github.com/onsi/ginkgo/ginkgo
+RUN wget -O- -nv https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s v1.31.0
+RUN go get -u golang.org/x/tools/cmd/cover
+RUN go get -u github.com/mattn/goveralls
+RUN go get -u honnef.co/go/tools/cmd/staticcheck
 
 RUN rm -rf /go/src/*
 
