@@ -1,4 +1,4 @@
-FROM golang:1.18.4-alpine3.15
+FROM --platform=linux/amd64 golang:1.18.4-alpine3.15
 
 LABEL maintainer="Sadlil Rhythom <me@sadlil.com>"
 
