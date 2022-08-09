@@ -1,11 +1,11 @@
 USER = sadlil
 PROJECT = gobuild
-VERSION = 1.18.4
+VERSION = 1.18.4-arm64
 
 ROOT_DIR:=$(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 
 build:
-	docker build -t ${USER}/${PROJECT}:${VERSION} .
+	docker build --platform linux/arm64 -t ${USER}/${PROJECT}:${VERSION} .
 
 push:
 	docker push ${USER}/${PROJECT}:${VERSION}
